@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>My Registration Form</h1>
+    <form action="server.php" method="POST">
+        <div>
+            <label for="name">First Name:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" id="lastname">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="pwconfirm">PW Confirm</label>
+            <input type="password" name="pwconfirm" id="pwconfirm">
+        </div>
+        <div>
+            <label for="birthday">Birthday</label>
+            <input type="date" name="birthday" id="birthday">
+        </div>
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+        </div>
+        <div>
+            <p>A short description about yourself:</p>
+            <textarea name="description" id="description"></textarea>
+        </div>
+        <div>
+            <label for="language">Favorite Language</label>
+            <select name="language" id="language">
+                <option value="javascript">Javascript</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="smalltalk">Smalltalk</option>
+                <option value="c">C</option>
+                <option value="cpp">C++</option>
+            </select>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
